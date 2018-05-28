@@ -13,7 +13,7 @@ namespace PokemonAPI.Controllers
 
         public IHttpActionResult Get()
         {
-            return Ok();
+            return Ok(pokemonService.GetByIdOrName(""));
         }
 
         public IHttpActionResult Get(string id)
